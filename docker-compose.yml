@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ".:/app"
+    ports:
+      - 4009:4009
+    environment:
+      - PORT=4009
